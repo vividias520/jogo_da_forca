@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>jogo da 'forca'</title>
+    <link rel="shortcut icon" href="jogo-da-forca.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="square">
+            <h1 class="animacao-titulo">Jogo da "Forca"</h1>
+            <label for="numero_letras">Número de letras:</label>
+            <select id="numero_letras">
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p>Adivinhe a fruta que começa com a letra indicada:</p>
+            <h2 id="dica"></h2>
+            <input type="text" class="entrada" id="entrada">
+            <button onclick="jogar()">Jogar</button>
+            <ul class="corpo"></ul>
+            <p id="fim_de_jogo"></p>
+            <p id="acerto"></p>
+            <p id="erra"></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
